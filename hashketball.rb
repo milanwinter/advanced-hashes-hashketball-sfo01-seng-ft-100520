@@ -131,13 +131,14 @@ def player_helper
 end
 
 def num_points_scored(player)
-  count = 0
-  while count < player_helper.length
-    if player_helper[count][:player_name] == player
-      return player_helper[count][:points]
-    end
-      count += 1
-  end
+  # count = 0
+  # while count < player_helper.length
+  #   if player_helper[count][:player_name] == player
+  #     return player_helper[count][:points]
+  #   end
+  #     count += 1
+  # end
+  player_helper[player][:points]
 end
 
 def shoe_size(player)
